@@ -1,0 +1,22 @@
+{
+  "name": "quarterly-earnings-presentation",
+  "version": "1.0.0",
+  "description": "A RevealJS presentation for the quarterly earnings report.",
+  "main": "slides/index.html",
+  "scripts": {
+    "start": "reveal-md slides/slides.md --port 8000",
+    "build": "reveal-md slides/slides.md --static slides",
+    "deploy": "gh-pages -d slides"
+  },
+  "dependencies": {
+    "reveal-md": "^4.0.0",
+    "gh-pages": "^3.2.3"
+  },
+  "keywords": [
+    "presentation",
+    "revealjs",
+    "markdown"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
