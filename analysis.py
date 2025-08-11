@@ -4,8 +4,8 @@
       "cell_type": "code",
       "metadata": { "language": "python" },
       "source": [
-        "# Data Analysis Notebook",
-        "# Author: 24f2006003@ds.study.iitm.ac.in",
+  "# Data Analysis Notebook",
+  "mo.md('**Contact:** 24f2006003@ds.study.iitm.ac.in')",
         "# This cell defines the dataset and initial variables.",
         "import marimo as mo",
         "import numpy as np",
