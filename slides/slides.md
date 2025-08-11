@@ -55,18 +55,12 @@ style: |
   section {
     font-family: 'Segoe UI', Arial, sans-serif;
   }
-  h1 {
     color: #0057b8;
-  }
   .bg-slide {
     background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80');
     background-size: cover;
     color: #fff;
-  }
--->
-
 # Product Documentation
-
 **Contact:** 24f2006003@ds.study.iitm.ac.in
 
 ---
