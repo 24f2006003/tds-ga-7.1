@@ -1,62 +1,36 @@
-# Quarterly Earnings Presentation
+# Supply Chain Analytics: Correlation Matrix Visualization
 
-This project contains an interactive presentation for the quarterly earnings report, utilizing RevealJS for modern presentation capabilities.
+**Author Email:** 24f2006003@ds.study.iitm.ac.in
 
-## Project Structure
+## Project Overview
+This project analyzes supplier performance data for a major automotive manufacturer.  
+The goal is to identify relationships between key supply chain metrics to improve  
+supplier selection, inventory planning, and cost optimization.
 
-```
-quarterly-earnings-presentation
-├── slides
-│   ├── index.html          # Main HTML file for the presentation
-│   ├── slides.md           # Markdown content for the slides
-│   └── assets
-│       └── custom.css      # Custom styles for the presentation
-├── package.json            # npm configuration file
-├── README.md               # Project documentation
-└── .github
-    └── workflows
-        └── deploy.yml      # GitHub Actions workflow for deployment
-```
+**Dataset Variables:**
+- Supplier_Lead_Time (Days from order placement to delivery)
+- Inventory_Levels (Units in stock)
+- Order_Frequency (Orders per month)
+- Delivery_Performance (On-time delivery rate %)
+- Cost_Per_Unit (Unit cost in $)
 
-## Features
+## Process
+1. **Enable Data Analysis ToolPak** in Excel.
+2. Import dataset into Excel.
+3. Use **Data → Data Analysis → Correlation** to create correlation matrix.
+4. Copy results to a new sheet.
+5. Apply **Conditional Formatting → Color Scales → Red-White-Green**.
+   - Red = Low correlation
+   - White = Neutral correlation
+   - Green = High correlation
+6. Take screenshot (400x400–512x512 px) of the heatmap.
+7. Export correlation matrix as CSV.
 
-- **Interactive Presentation**: Built using RevealJS for a modern look and feel.
-- **Markdown Support**: Slides are written in Markdown for easy editing and formatting.
-- **Animated Elements**: Use of fragments to create engaging animations within the slides.
-- **Code Samples**: Syntax highlighting for code snippets to enhance readability.
-- **Mathematical Equations**: Inclusion of financial formulas for clarity in reporting.
-- **Speaker Notes**: Guidance for presenters included in the slides.
+## Files in this Repository
+- **README.md** — This file, with project description and author email.
+- **correlation.csv** — Exported correlation matrix from Excel.
+- **heatmap.png** — Screenshot of Excel conditional formatting heatmap.
 
-## Running the Presentation Locally
-
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   cd quarterly-earnings-presentation
-   ```
-
-2. Install dependencies:
-   ```
-   npm install
-   ```
-
-3. Start the local server:
-   ```
-   npm start
-   ```
-
-4. Open your browser and navigate to `http://localhost:8000` to view the presentation.
-
-## Deploying to GitHub Pages
-
-1. Ensure your changes are committed to the main branch.
-2. Push your changes to the repository:
-   ```
-   git push origin main
-   ```
-
-3. The GitHub Actions workflow will automatically build and deploy the presentation to GitHub Pages.
-
-## Contact
-
-For any inquiries, please reach out via email: 24f2006003@ds.study.iitm.ac.in.
+## How to View
+- [View correlation.csv](./correlation.csv)
+- [View heatmap.png](./heatmap.png)
