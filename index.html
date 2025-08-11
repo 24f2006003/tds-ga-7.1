@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Quarterly Earnings — Reveal.js</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.3.1/dist/reveal.css" />
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.3.1/dist/theme/white.css" id="theme" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
+</head>
+<body>
+  <div class="reveal">
+    <!-- slides loaded from slides.md -->
+    <div class="slides"
+         data-markdown="slides.md"
+         data-separator="^---$"
+         data-separator-vertical="^--$"
+         data-separator-notes="^Note:"
+         data-charset="utf-8">
+    </div>
+  </div>
+
+  <script type="module">
+    import Reveal from 'https://unpkg.com/reveal.js@4.3.1/dist/reveal.esm.js';
+    import Markdown from 'https://unpkg.com/reveal.js@4.3.1/plugin/markdown/markdown.esm.js';
+    import Highlight from 'https://unpkg.com/reveal.js@4.3.1/plugin/highlight/highlight.esm.js';
+    import Math from 'https://unpkg.com/reveal.js@4.3.1/plugin/math/math.esm.js';
+    import Notes from 'https://unpkg.com/reveal.js@4.3.1/plugin/notes/notes.esm.js';
+
+    Reveal.initialize({
+      hash: true,
+      plugins: [ Markdown, Highlight, Math, Notes ],
+      math: {
+        // MathJax for LaTeX rendering
+        mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+      }
+    });
+  </script>
+</body>
+</html>
